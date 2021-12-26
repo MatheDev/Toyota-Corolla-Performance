@@ -15,17 +15,20 @@
   --red: #f83038;
 }
 
+/* body{
+  height: 100vh;
+  width: 100vw;
+} */
 
 .main{
   position: relative;
   min-height: 100vh;
   background: linear-gradient(#1c1c1c, #323232);
-  padding: 30px 100px;   
+  padding: 30px 50px;   
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .main::before{
@@ -45,7 +48,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px; 
+  padding: 30px 50px; 
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -116,17 +119,45 @@ header{
 }
 
 /* Footer */
-.footer ul{
+.footer{
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 30px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer ul li{
+.social{
+  display: flex;
+}
+
+.social li{
   list-style: none;
+}
+
+.social li a{
   color: var(--white);
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+
+/* dots */
+.dots{
+  display: flex;
+}
+
+.dots .dot{
+  width: 10px;
+  height: 10px;
+  background: rgba(255,255,255,0.05);
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.dots .dot .active{
+  background: var(--white);
 }
